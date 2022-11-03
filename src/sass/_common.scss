@@ -1,0 +1,8 @@
+@import "./variable";
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: $primary;
+  font-family: $font-family;
+}
