@@ -2,6 +2,7 @@ import "./header.scss";
 import React from "react";
 import bannerImg from "../../assets/bg-image.jpg";
 import profileImg from "../../assets/banner.png";
+import Icon from "../Icon/Icon";
 
 const Header = () => {
   return (
@@ -15,6 +16,11 @@ const Header = () => {
           <div className="header__left__content">
             <h1 className="title">Tajul Islam Refath</h1>
             <p>I am a Developer</p>
+            <div className="flex space-x-4 mt-5">
+              <Icon />
+              <Icon />
+              <Icon />
+            </div>
           </div>
         </div>
         <div className="header__right grid grid-cols-1 md:grid-cols-2">

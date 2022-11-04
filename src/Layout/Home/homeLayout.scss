@@ -1,0 +1,43 @@
+@import "../../sass/variable";
+
+.homeLayout {
+  height: 100%;
+  &__main {
+    margin-bottom: 30px;
+  }
+  &__sideNav {
+    min-height: 70vh;
+    position: static;
+    overflow-y: auto;
+    background: $icon-background;
+    box-shadow: $card-shadow;
+    border-radius: 8px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    ul {
+      text-decoration: none;
+      li {
+        margin-bottom: 12px;
+        // box-shadow: $shadow-1;
+        &:hover {
+          box-shadow: $card-shadow;
+          background-color: #212428;
+          a {
+            color: $primary;
+          }
+        }
+        border-radius: 8px;
+        a {
+          display: block;
+          padding: 15px 10px;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 600;
+          color: $secondary;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

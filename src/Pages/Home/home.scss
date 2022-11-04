@@ -1,0 +1,21 @@
+@import "../../sass/variable";
+
+.home {
+  min-height: 70vh;
+  background: $card-background;
+  box-shadow: $shadow-1;
+  padding: 30px;
+  border-radius: 8px;
+
+  .title {
+    color: #fff;
+    margin: 8px 0;
+    span {
+      color: $primary;
+    }
+  }
+
+  .short-title {
+    color: $secondary;
+  }
+}

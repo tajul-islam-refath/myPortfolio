@@ -3,6 +3,36 @@
 .title {
   font-size: 32px;
   font-weight: 600;
-  color: $primary;
+  // color: $primary;
   font-family: $font-family;
+}
+
+.myIcon {
+  margin: 10px 12px;
+  line-height: 55px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: $icon-background;
+  box-shadow: $shadow-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    box-shadow: none;
+  }
+  svg {
+    font-size: 22px;
+  }
+}
+
+.subtitle {
+  text-transform: uppercase;
+  color: $secondary;
 }
