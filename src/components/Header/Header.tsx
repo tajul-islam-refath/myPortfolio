@@ -1,7 +1,7 @@
 import "./header.scss";
 import React from "react";
-import bannerImg from "../../assets/bg-image.jpg";
-import profileImg from "../../assets/banner.png";
+import bannerImg from "../../assets/cover.jpg";
+import profileImg from "../../assets/profile.png";
 import Icon from "../Icon/Icon";
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="header__right grid grid-cols-1 md:grid-cols-2">
+        <div className="header__right grid grid-cols-1 space-y-5 md:grid-cols-2  md:space-y-0">
           <div className="header__email">
             <p>Email</p>
             <span>Tajul Islam Refath</span>

@@ -1,0 +1,42 @@
+@import "../../sass/variable";
+@import "../../sass/responsive";
+
+.resume {
+  min-height: 70vh;
+  background: $card-background;
+  box-shadow: $shadow-1;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+
+  &__tabs {
+    width: auto;
+    margin: auto;
+  }
+  &__nav {
+    background: $card-background;
+    box-shadow: $card-shadow;
+    ul {
+      display: flex;
+
+      li {
+        padding: 30px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $secondary;
+        &:hover {
+          background: linear-gradient(145deg, #1e2024, #23272b);
+          box-shadow: $shadow-1;
+          cursor: pointer;
+          color: $primary;
+        }
+      }
+    }
+
+    .active {
+      background: linear-gradient(145deg, #1e2024, #23272b);
+      box-shadow: $shadow-1;
+      color: $primary;
+    }
+  }
+}

@@ -9,15 +9,15 @@ function HomeLayout() {
     <div className="homeLayout">
       <Header />
       <section className="homeLayout__main md:container md:mx-auto">
-        <div className="flex flex-row space-x-8">
-          <nav className="homeLayout__sideNav basis-11/12 md:basis-2/12">
+        <div className="flex flex-row space-x-0 md:space-x-8">
+          <nav className="homeLayout__sideNav basis-0  md:basis-2/12">
             <ul>
               <li>
-                <NavLink to="/home">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/about">about</NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink to="/resume">resume</NavLink>
               </li>
@@ -32,7 +32,7 @@ function HomeLayout() {
               </li>
             </ul>
           </nav>
-          <main className="basis-11/12 md:basis-10/12">
+          <main className="basis-full mx-4 md:mx-0 md:basis-10/12">
             <Outlet />
           </main>
         </div>
