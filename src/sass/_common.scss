@@ -29,6 +29,7 @@
   &:hover {
     box-shadow: none;
     background: $primary;
+    transform: translateY(-10px);
   }
   svg {
     font-size: 22px;
