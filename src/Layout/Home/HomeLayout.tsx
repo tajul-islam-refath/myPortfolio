@@ -8,7 +8,7 @@ function HomeLayout() {
   return (
     <div className="homeLayout">
       <Header />
-      <section className="homeLayout__main md:container md:mx-auto">
+      <section className="homeLayout__warper md:container md:mx-auto">
         <div className="flex flex-row space-x-0 md:space-x-8">
           <nav className="homeLayout__sideNav basis-0  md:basis-2/12">
             <ul>
@@ -32,7 +32,7 @@ function HomeLayout() {
               </li>
             </ul>
           </nav>
-          <main className="basis-full mx-4 md:mx-0 md:basis-10/12">
+          <main className="homeLayout__main basis-full mx-4 md:mx-0 md:basis-10/12">
             <Outlet />
           </main>
         </div>

@@ -7,7 +7,7 @@ import Education from "./Education/Education";
 const Resume = () => {
   const [tab, setTab] = useState("skills");
   return (
-    <div className="resume">
+    <div className="resume mx-2 sm:mx-0">
       <div className="resume__tabs">
         <nav className="resume__nav">
           <ul>

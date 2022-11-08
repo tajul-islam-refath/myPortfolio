@@ -2,12 +2,12 @@
 @import "../../sass/responsive";
 
 .resume {
-  min-height: 70vh;
-  background: $card-background;
-  box-shadow: $shadow-1;
-  padding: 30px;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  // min-height: 70vh;
+  // background: $card-background;
+  // box-shadow: $shadow-1;
+  // padding: 30px;
+  // margin-bottom: 20px;
+  // border-radius: 8px;
 
   &__tabs {
     width: auto;
@@ -18,7 +18,6 @@
     box-shadow: $card-shadow;
     ul {
       display: flex;
-
       li {
         padding: 30px 40px;
         font-size: 18px;
@@ -30,6 +29,10 @@
           cursor: pointer;
           color: $primary;
         }
+      }
+
+      @include break(small) {
+        flex-direction: column;
       }
     }
 

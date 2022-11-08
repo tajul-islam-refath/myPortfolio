@@ -3,7 +3,7 @@
 
 .homeLayout {
   min-height: 100vh;
-  &__main {
+  &__warper {
     margin-bottom: 30px;
     margin-top: 40px;
   }
@@ -74,5 +74,13 @@
         background-color: $primary;
       }
     }
+  }
+  &__main {
+    min-height: 70vh;
+    background: $card-background;
+    box-shadow: $shadow-1;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
   }
 }

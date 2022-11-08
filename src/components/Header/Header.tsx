@@ -3,6 +3,9 @@ import React from "react";
 import bannerImg from "../../assets/cover.jpg";
 import profileImg from "../../assets/profile.png";
 import Icon from "../Icon/Icon";
+import { FiLinkedin } from "react-icons/fi";
+import { FiFacebook } from "react-icons/fi";
+import { BsGithub } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -17,9 +20,9 @@ const Header = () => {
             <h1 className="title">Tajul Islam Refath</h1>
             <p>I am a Developer</p>
             <div className="flex space-x-4 mt-5">
-              <Icon />
-              <Icon />
-              <Icon />
+              <Icon icon={FiLinkedin} />
+              <Icon icon={FiFacebook} />
+              <Icon icon={BsGithub} />
             </div>
           </div>
         </div>

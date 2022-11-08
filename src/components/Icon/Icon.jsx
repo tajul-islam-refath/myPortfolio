@@ -1,12 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./icon.scss";
-import { FiFacebook } from "react-icons/fi";
 
-function Icon() {
+import { IconType } from "react-icons";
+
+type IconProp = {
+  icon: IconType,
+  herf?: string | undefined,
+};
+
+function Icon({ icon: Icon }: IconProp) {
   return (
     <Link className="myIcon" to="/">
-      <FiFacebook />
+      <Icon />
     </Link>
   );
 }

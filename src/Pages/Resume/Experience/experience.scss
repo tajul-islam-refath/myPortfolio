@@ -14,6 +14,11 @@
     margin: 15px 0;
     padding-left: 31px;
     border-left: 5px solid #17191c;
+
+    @include break(small) {
+      border-left: none;
+      padding-left: 0;
+    }
     &__card {
       position: relative;
       z-index: 1;
@@ -33,6 +38,15 @@
         background: linear-gradient(to right bottom, #212428, #16181c);
         opacity: 0;
         z-index: -1;
+      }
+
+      &:hover {
+        cursor: pointer;
+        .list__card__inner {
+          &::after {
+            background: $primary;
+          }
+        }
       }
 
       &__inner {
@@ -59,6 +73,15 @@
           transform: translateY(-7px);
           background: #222529;
         }
+        @include break(small) {
+          &::before,
+          &::after {
+            width: 0;
+            height: 0;
+            background: none;
+            border: none;
+          }
+        }
       }
 
       &__heading {
@@ -68,6 +91,10 @@
         border-bottom: 1px solid #1a1d23;
         padding-bottom: 20px;
         margin-bottom: 20px;
+        @include break(small) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
 
       &__title {
