@@ -29,11 +29,11 @@ const Header = () => {
         <div className="header__right grid grid-cols-1 space-y-5 md:grid-cols-2  md:space-y-0">
           <div className="header__email">
             <p>Email</p>
-            <span>Tajul Islam Refath</span>
+            <span>tajul16-447@diu.edu.bd</span>
           </div>
           <div className="header__phone">
             <p>Mobile</p>
-            <span>+8801988775828</span>
+            <span>+8801517825727</span>
           </div>
           <div className="header__birthday">
             <p>Birthday</p>

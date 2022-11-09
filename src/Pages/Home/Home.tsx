@@ -1,6 +1,7 @@
 import "./home.scss";
 import React from "react";
 import profileImg from "../../assets/profile1.jpg";
+import cv from "../../assets/cv.pdf";
 
 const Home = () => {
   return (
@@ -16,12 +17,17 @@ const Home = () => {
             <br />A Software Developer
           </h1>
           <p className="short-title">
-            I use animation as a third dimension by which to simplify
-            experiences and kuiding thro each and every interaction. I’m not
-            adding motion just to spruce things up, but doing it in ways that.
+            I intend to be a part of an organization where I can constantly
+            learn and develop my technical and management skills and make the
+            best use of them for the growth of an organization. I look forward
+            to establishing myself by adopting new technologies as well.
           </p>
 
-          <div className="btn__cv">Download My Cv</div>
+          <div className="btn__cv">
+            <a href={cv} download>
+              Download My Cv
+            </a>
+          </div>
         </div>
       </div>
     </div>

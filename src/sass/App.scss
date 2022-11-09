@@ -1,2 +1,16 @@
 @import "./variable";
 @import "./common";
+@tailwind components;
+
+@layer components {
+  .card {
+    background: $icon-background;
+    // box-shadow: $shadow-1;
+    padding: 30px;
+    border-radius: 20px;
+    &:hover {
+      background: $card-background;
+      cursor: pointer;
+    }
+  }
+}

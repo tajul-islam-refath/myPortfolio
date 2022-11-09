@@ -6,6 +6,7 @@ import HomeLayout from "./Layout/Home/HomeLayout";
 import Home from "./Pages/Home/Home";
 import Resume from "./Pages/Resume/Resume";
 import Portfolio from "./Pages/Portfolio/Portfolio";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -20,11 +20,11 @@ const Experience = () => {
                   <span>Bangladesh</span>
                 </div>
               </div>
-              <p className="list__card__description">
+              {/* <p className="list__card__description">
                 The bangladesh economy has grown strongly over recent years,
                 having transformed itself from a producer and innovation-based
                 economy.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

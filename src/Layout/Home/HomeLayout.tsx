@@ -32,7 +32,7 @@ function HomeLayout() {
               </li>
             </ul>
           </nav>
-          <main className="homeLayout__main basis-full mx-4 md:mx-0 md:basis-10/12">
+          <main className="homeLayout__main  basis-full mx-4 md:mx-0 md:basis-10/12">
             <Outlet />
           </main>
         </div>

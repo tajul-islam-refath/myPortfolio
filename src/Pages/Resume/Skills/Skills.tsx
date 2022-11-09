@@ -42,12 +42,12 @@ const Skills = () => {
         <div className="prograss">
           <div className="flex justify-between">
             <span className="name">Scss</span>
-            <span className="rateing">4/5</span>
+            <span className="rateing">3/5</span>
           </div>
           <div className="prograss__container">
             <div
               className="prograss__bar"
-              style={{ width: `${4 * 20}%` }}></div>
+              style={{ width: `${3 * 20}%` }}></div>
           </div>
         </div>
       </div>

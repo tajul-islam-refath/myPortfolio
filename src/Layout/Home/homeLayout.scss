@@ -39,6 +39,9 @@
           background-color: #212428;
           a {
             color: $primary;
+            @include break(xsmall) {
+              color: #000;
+            }
           }
         }
 

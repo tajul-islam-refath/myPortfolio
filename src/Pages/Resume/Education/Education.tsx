@@ -22,7 +22,7 @@ const Education = () => {
               </div>
               <p className="list__card__description">
                 Currently I am a student under department of computing and
-                information systems at daffodil International university
+                information systems at daffodil International university.
               </p>
             </div>
           </div>

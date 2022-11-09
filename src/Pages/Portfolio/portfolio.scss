@@ -1,7 +1,68 @@
 @import "../../sass/variable";
+@import "../../sass/responsive";
 
 .portfolio {
   .title {
     color: $secondary;
+  }
+
+  .card {
+    &:hover {
+      .inner {
+        &__tham {
+          border-radius: 10px;
+          img {
+            transform: scale(1.2);
+            transition: 0.5s linear;
+          }
+        }
+      }
+    }
+    .inner {
+      &__tham {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: transform linear;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @include break(small) {
+          height: 200px;
+        }
+      }
+
+      &--tac {
+        color: $primary;
+        font-weight: 500;
+      }
+
+      &--likes {
+        padding: 4px 12px;
+        transition: 0.5s;
+        &:hover {
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 8px;
+          color: $primary;
+        }
+      }
+
+      &--title {
+        font-size: 28px;
+        color: $secondary;
+        font-weight: 600;
+        @include break(small) {
+          font-size: 18px;
+        }
+        &:hover {
+          color: $primary;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
