@@ -1,5 +1,6 @@
 import "./portfolio.scss";
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { portfolio } from "../../data/data";
 
@@ -15,10 +16,18 @@ const Portfolio = () => {
                 <img src={web.thumbnail} alt="Web" />
               </div>
               <div className="flex flex-col md:flex-row justify-between space-y-3 md:space-y-0 my-4">
-                <h6 className="inner--tac">{web.tec}</h6>
-                <p className="inner--likes ">{web.likes}</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
+                  {web.tec.map((name, i) => (
+                    <h6 className="inner--tac" key={i}>
+                      {name}
+                    </h6>
+                  ))}
+                </div>
+                {/* <p className="inner--likes ">Love - {web.likes}</p> */}
               </div>
-              <h1 className="inner--title ">{web.title}</h1>
+              <a href={web.git}>
+                <h1 className="inner--title ">{web.title}</h1>
+              </a>
             </div>
           </div>
         ))}
