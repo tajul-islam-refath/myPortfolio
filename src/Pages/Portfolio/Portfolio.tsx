@@ -25,7 +25,7 @@ const Portfolio = () => {
                 </div>
                 {/* <p className="inner--likes ">Love - {web.likes}</p> */}
               </div>
-              <a href={web.git}>
+              <a href={web.git} target="_blank">
                 <h1 className="inner--title ">{web.title}</h1>
               </a>
             </div>

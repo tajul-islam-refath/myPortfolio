@@ -9,11 +9,11 @@ type IconProp = {
   herf?: string | undefined,
 };
 
-function Icon({ icon: Icon }: IconProp) {
+function Icon({ icon: Icon, herf: link }: IconProp) {
   return (
-    <Link className="myIcon" to="/">
+    <a className="myIcon" href={link} target="_blank">
       <Icon />
-    </Link>
+    </a>
   );
 }
 

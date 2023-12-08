@@ -1,7 +1,6 @@
 import "./home.scss";
-import React from "react";
 import profileImg from "../../assets/profile1.jpg";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/tajul_islam_refath.pdf";
 
 const Home = () => {
   return (

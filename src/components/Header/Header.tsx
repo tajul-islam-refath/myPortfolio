@@ -1,7 +1,7 @@
 import "./header.scss";
 import React from "react";
 import bannerImg from "../../assets/cover.jpg";
-import profileImg from "../../assets/profile.png";
+import profileImg from "../../assets/formal image.png";
 import Icon from "../Icon/Icon";
 import { FiLinkedin } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
@@ -20,9 +20,18 @@ const Header = () => {
             <h1 className="title">Tajul Islam Refath</h1>
             <p>I am a Developer</p>
             <div className="flex space-x-4 mt-5">
-              <Icon icon={FiLinkedin} />
-              <Icon icon={FiFacebook} />
-              <Icon icon={BsGithub} />
+              <Icon
+                icon={FiLinkedin}
+                herf="https://www.linkedin.com/in/tajul-islam-refath-94119a197/"
+              />
+              <Icon
+                icon={FiFacebook}
+                herf="https://www.facebook.com/profile.php?id=100010909307455"
+              />
+              <Icon
+                icon={BsGithub}
+                herf="https://github.com/tajul-islam-refath"
+              />
             </div>
           </div>
         </div>

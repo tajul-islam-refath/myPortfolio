@@ -2,8 +2,23 @@ import sadaBlog from "../assets/sadaBlog.png";
 import amazon from "../assets/amazon.png";
 import admin from "../assets/admin-reactjs.png";
 import bdshop from "../assets/bdshop.png";
-
+import gridImage from "../assets/drag-and-drop.png";
+import reactConferance from "../assets/react-confirance.png";
 export const portfolio = [
+  {
+    title: "React Conference",
+    likes: 0,
+    tec: ["NextJs", "tailwindcss", "responsive", "graph-ql"],
+    git: "https://github.com/tajul-islam-refath/nextjs-conference",
+    thumbnail: reactConferance,
+  },
+  {
+    title: "drag-and-drop-imageGallery",
+    likes: 0,
+    tec: ["ReactJs", "DND-KIT", "GRID"],
+    git: "https://github.com/tajul-islam-refath/drag-and-drop-imageGallery",
+    thumbnail: gridImage,
+  },
   {
     title: "BDShop is an ecommerce website",
     likes: 0,
